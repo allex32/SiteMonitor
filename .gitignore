@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SiteMonitor/bin
+/SiteMonitor.Tests/bin/Debug/netcoreapp2.0
+/SiteMonitor.Tests/obj
+/SiteMonitor/obj
+/SiteMonitor/Properties/PublishProfiles

@@ -1,0 +1,42 @@
+﻿@model SiteMonitor.Models.Site
+
+@{
+    ViewData["Title"] = "Удалить";
+}
+
+<h3>Удаление</h3>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UriString)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UriString)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteAvailability)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteAvailability)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastCheck)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastCheck)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SiteId" />
+        <input type="submit" value="Удалить" class="btn btn-default" /> |
+        <a asp-action="Index">К списку</a>
+    </form>
+</div>
